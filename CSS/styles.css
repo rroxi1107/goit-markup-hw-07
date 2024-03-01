@@ -3,12 +3,12 @@
     --text-color: #333333;
     --background-color: #ffffff;
     --highlight-color: #ffcc00;
-    --h1-background-color: #ffffff; /* Culorile de fundal pentru h1 */
-    --h1-text-color: #2E2F42; /* Culoarea text pentru h1 */
-    --h2-background-color: #2E2F42; /* Culorile de fundal pentru h2 */
-    --h3-background-color: #ffffff; /* Culorile de fundal pentru h3 */
-    --h2-text-color: #ffffff; /* Culoarea text pentru h2 */
-    --h3-text-color: #2e2f42; /* Culoarea text pentru h3 */
+    --h1-background-color: #ffffff; 
+    --h1-text-color: #2E2F42;
+    --h2-background-color: #2E2F42;
+    --h3-background-color: #ffffff; 
+    --h2-text-color: #ffffff; 
+    --h3-text-color: #2e2f42;  
     --h4-background-color: #ffffff;
     --h4-text-color: #2e2f42
     --footer-background-color: #2e2f42;
@@ -19,8 +19,8 @@ body {
     font-family: "Roboto", sans-serif; /* C7 */
     color: var(--text-color); /* C10 */
     background-color: var(--background-color); /* C10 */
-    margin: 0; /* Elimină marginile implicite ale body-ului */
-    padding: 0; /* Elimină padding-ul implicite ale body-ului */
+    margin: 0; 
+    padding: 0; 
 }
 
 /* Stilurile pentru fonturile Roboto */
@@ -132,38 +132,56 @@ body {
 h1 {
     font-size: 56px;
     /* Valoarea din layout */
-    background-color: var(--h1-background-color); /* Culorile de fundal pentru h1 */
-    line-height: 60px; /* Valoarea din layout */
-    font-weight: 700; /* Valoarea din layout */
-    letter-spacing: 2%; /* Stilizarea cerută pentru spațierea literelor */
+    background-color: var(--h1-background-color); 
+    line-height: 60px; 
+    font-weight: 700; 
+    letter-spacing: 2%; 
 }
 
 h2 {
-    font-size: 36px; /* Valoarea din layout */
-    background-color: var(--h2-background-color); /* Culorile de fundal pentru h2 */
+    font-size: 36px; 
+    background-color: var(--h2-background-color); 
     color: var(--h2-text-color);
-    line-height: 40px; /* Valoarea din layout */
-    font-weight: 700; /* Valoarea din layout */
-    letter-spacing: 2%; /* Stilizarea cerută pentru spațierea literelor */
-    text-align: center; /* C11 - Alinearea textului la centru */
+    line-height: 40px; 
+    font-weight: 700; 
+    letter-spacing: 2%; 
+    text-align: center; 
 }
 
 h3 {
-    font-size: 36px; /* Valoarea din layout */
-    background-color: var(--h3-background-color); /* Culorile de fundal pentru h3 */
-    line-height: 40px; /* Valoarea din layout */
-    font-weight: 700; /* Valoarea din layout */
+    font-size: 36px; 
+    background-color: var(--h3-background-color);
+    line-height: 40px; 
+    font-weight: 700; 
     text-align: center
 }
 
 h4 {
     font-size: 20px;
-    /* Valoarea din layout */
     background-color: var(--h4-background-color);
     line-height: 24px;
     font-weight: 500;
 }
 
+.customlist {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Creează 4 coloane egale */
+    gap: 20px;
+    /* Adaugă un spațiu între elementele grilei */
+    list-style: none;
+    /* Elimină marcatorii listei */
+}
+
+.customitem {
+    margin-bottom: 20px;
+    /* Adaugă un spațiu între fiecare element al listei */
+}
+
+.customitem h4, .customitem p {
+    margin: 0;
+    /* Elimină marginile implicite ale titlurilor și paragrafelor */
+}
 /* Stilurile pentru link-uri */
 a {
     color: var(--text-color); /* C13 - Culorile textului */
