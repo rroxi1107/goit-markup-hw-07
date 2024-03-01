@@ -9,6 +9,8 @@
     --h3-background-color: #ffffff; /* Culorile de fundal pentru h3 */
     --h2-text-color: #ffffff; /* Culoarea text pentru h2 */
     --h3-text-color: #2e2f42; /* Culoarea text pentru h3 */
+    --h4-background-color: #ffffff;
+    --h4-text-color: #2e2f42
 }
 
 /* C1 - Stiluri pentru elementul body */
@@ -119,11 +121,19 @@ h2 {
 }
 
 h3 {
-    font-size: 20px; /* Valoarea din layout */
+    font-size: 36px; /* Valoarea din layout */
     background-color: var(--h3-background-color); /* Culorile de fundal pentru h3 */
-    line-height: 24px; /* Valoarea din layout */
-    font-weight: 500; /* Valoarea din layout */
+    line-height: 40px; /* Valoarea din layout */
+    font-weight: 700; /* Valoarea din layout */
     text-align: center
+}
+
+h4 {
+    font-size: 20px;
+    /* Valoarea din layout */
+    background-color: var(--h4-background-color);
+    line-height: 24px;
+    font-weight: 500;
 }
 
 /* Stilurile pentru link-uri */
