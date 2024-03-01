@@ -3,26 +3,18 @@
     --text-color: #333333;
     --background-color: #ffffff;
     --highlight-color: #ffcc00;
-    --h1-background-color: #ffffff;
-    /* Culorile de fundal pentru h1 */
-    --h2-background-color: #2e2f42;
-    /* Culorile de fundal pentru h2 */
-    --h3-background-color: #2e2f42;
-    /* Culorile de fundal pentru h3 */
+    --h1-background-color: #ffffff; /* Culorile de fundal pentru h1 */
+    --h2-background-color: #2e2f42; /* Culorile de fundal pentru h2 */
+    --h3-background-color: #2e2f42; /* Culorile de fundal pentru h3 */
 }
 
 /* C1 - Stiluri pentru elementul body */
 body {
-    font-family: 'Roboto', sans-serif;
-    /* C7 */
-    color: var(--text-color);
-    /* C10 */
-    background-color: var(--background-color);
-    /* C10 */
-    margin: 0;
-    /* Elimină marginile implicite ale body-ului */
-    padding: 0;
-    /* Elimină padding-ul implicite ale body-ului */
+    font-family: "Roboto", sans-serif; /* C7 */
+    color: var(--text-color); /* C10 */
+    background-color: var(--background-color); /* C10 */
+    margin: 0; /* Elimină marginile implicite ale body-ului */
+    padding: 0; /* Elimină padding-ul implicite ale body-ului */
 }
 
 /* Stilurile pentru fonturile Roboto */
@@ -100,48 +92,63 @@ body {
 
 /* C8 - Variantele de fonturi alternative și tipul familiei (sans-serif) la sfârșitul font-family */
 body {
-    font-family: 'Roboto', sans-serif;
-    /* C9 */
+    font-family: 'Roboto', sans-serif; /* C9 */
 }
 
 /* C11 - Dimensiunea fontului */
 h1 {
     font-size: 56px;
     /* Valoarea din layout */
-    background-color: var(--h1-background-color);
-    /* Culorile de fundal pentru h1 */
-    line-height: 60px;
-    /* Valoarea din layout */
-    font-weight: 700;
-    /* Valoarea din layout */
-    letter-spacing: 2%;
-    /* Stilizarea cerută pentru spațierea literelor */
-    text-align: center;
-    /* C11 - Alinearea textului la centru */
+    background-color: var(--h1-background-color); /* Culorile de fundal pentru h1 */
+    line-height: 60px; /* Valoarea din layout */
+    font-weight: 700; /* Valoarea din layout */
+    letter-spacing: 2%; /* Stilizarea cerută pentru spațierea literelor */
+    text-align: center; /* C11 - Alinearea textului la centru */
 }
 
 h2 {
-    font-size: 36px;
-    /* Valoarea din layout */
-    background-color: var(--h2-background-color);
-    /* Culorile de fundal pentru h2 */
-    line-height: 40px;
-    /* Valoarea din layout */
-    font-weight: 700;
-    /* Valoarea din layout */
-    letter-spacing: 2%;
-    /* Stilizarea cerută pentru spațierea literelor */
-    text-align: center;
-    /* C11 - Alinearea textului la centru */
+    font-size: 36px; /* Valoarea din layout */
+    background-color: var(--h2-background-color); /* Culorile de fundal pentru h2 */
+    line-height: 40px; /* Valoarea din layout */
+    font-weight: 700; /* Valoarea din layout */
+    letter-spacing: 2%; /* Stilizarea cerută pentru spațierea literelor */
+    text-align: center; /* C11 - Alinearea textului la centru */
 }
 
 h3 {
-    font-size: 20px;
-    /* Valoarea din layout */
-    background-color: var(--h3-background-color);
-    /* Culorile de fundal pentru h3 */
-    line-height: 24px;
-    /* Valoarea din layout */
-    font-weight: 500;
-    /* Valoarea din layout */
+    font-size: 20px; /* Valoarea din layout */
+    background-color: var(--h3-background-color); /* Culorile de fundal pentru h3 */
+    line-height: 24px; /* Valoarea din layout */
+    font-weight: 500; /* Valoarea din layout */
+}
+
+/* Stilurile pentru link-uri */
+a {
+    color: var(--text-color); /* C13 - Culorile textului */
+    text-decoration: none; /* Elimină sublinierea implicită a link-urilor */
+    transition: color 0.3s ease; /* Efect de tranziție pentru schimbarea culorii textului */
+}
+
+a:hover,
+a:focus {
+    color: var(--highlight-color);
+    /* C4 - Schimbarea culorii textului la interacțiune (hover și focus) */
+}
+
+/* C5 - Textul contactelor din antet și subsol își schimbă culoarea la interacțiune */
+header a,
+footer a {
+    transition: color 0.3s ease;
+}
+
+header a:hover,
+header a:focus,
+footer a:hover,
+footer a:focus {
+    color: var(--highlight-color);
+    /* C5 - Schimbarea culorii textului la interacțiune (hover și focus) */
+}
+/* C16 - Stilul cursorului pentru butoane */
+button {
+    cursor: pointer;
 }
