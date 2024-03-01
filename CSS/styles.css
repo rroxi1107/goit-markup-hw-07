@@ -4,8 +4,11 @@
     --background-color: #ffffff;
     --highlight-color: #ffcc00;
     --h1-background-color: #ffffff; /* Culorile de fundal pentru h1 */
-    --h2-background-color: #2e2f42; /* Culorile de fundal pentru h2 */
-    --h3-background-color: #2e2f42; /* Culorile de fundal pentru h3 */
+    --h1-text-color: #2E2F42; /* Culoarea text pentru h1 */
+    --h2-background-color: #2E2F42; /* Culorile de fundal pentru h2 */
+    --h3-background-color: #ffffff; /* Culorile de fundal pentru h3 */
+    --h2-text-color: #ffffff; /* Culoarea text pentru h2 */
+    --h3-text-color: #2e2f42; /* Culoarea text pentru h3 */
 }
 
 /* C1 - Stiluri pentru elementul body */
@@ -103,12 +106,12 @@ h1 {
     line-height: 60px; /* Valoarea din layout */
     font-weight: 700; /* Valoarea din layout */
     letter-spacing: 2%; /* Stilizarea cerută pentru spațierea literelor */
-    text-align: center; /* C11 - Alinearea textului la centru */
 }
 
 h2 {
     font-size: 36px; /* Valoarea din layout */
     background-color: var(--h2-background-color); /* Culorile de fundal pentru h2 */
+    color: var(--h2-text-color);
     line-height: 40px; /* Valoarea din layout */
     font-weight: 700; /* Valoarea din layout */
     letter-spacing: 2%; /* Stilizarea cerută pentru spațierea literelor */
@@ -120,6 +123,7 @@ h3 {
     background-color: var(--h3-background-color); /* Culorile de fundal pentru h3 */
     line-height: 24px; /* Valoarea din layout */
     font-weight: 500; /* Valoarea din layout */
+    text-align: center
 }
 
 /* Stilurile pentru link-uri */
@@ -139,6 +143,10 @@ a:focus {
 header a,
 footer a {
     transition: color 0.3s ease;
+}
+
+footer h2 {
+    text-align: left;
 }
 
 header a:hover,
