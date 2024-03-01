@@ -11,6 +11,7 @@
     --h3-text-color: #2e2f42; /* Culoarea text pentru h3 */
     --h4-background-color: #ffffff;
     --h4-text-color: #2e2f42
+    --footer-background-color: #2e2f42;
 }
 
 /* C1 - Stiluri pentru elementul body */
@@ -95,6 +96,33 @@ body {
     font-style: italic;
 }
 
+/* Stilizarea logo-ului */
+.logoheader {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    background: linear-gradient(to right, #4D5AE5 0%, #4D5AE5 40%, #2E2F42 40%, #2E2F42 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    padding: 10px;
+}
+
+.logofooter {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    /* elimină sublinierea implicită a link-ului */
+    background: linear-gradient(to right, #4D5AE5 0%, #4D5AE5 40%, #F4F4FD 40%, #F4F4FD 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: #2E2F42;
+    display: inline-block;
+    padding: 10px;
+}
+
 /* C8 - Variantele de fonturi alternative și tipul familiei (sans-serif) la sfârșitul font-family */
 body {
     font-family: 'Roboto', sans-serif; /* C9 */
@@ -159,6 +187,9 @@ footer h2 {
     text-align: left;
 }
 
+footer {
+    background-color: #2E2F42;
+}
 header a:hover,
 header a:focus,
 footer a:hover,
