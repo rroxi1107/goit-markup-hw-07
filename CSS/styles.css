@@ -406,7 +406,7 @@ footer {
     top: 2280px;
     background-color: #2E2F42;
     color: #FFFFFF;
-    text-align: center;
+    text-align: left;
 }
 
 .footer-container {
@@ -415,7 +415,6 @@ footer {
     position: absolute;
     bottom: 150px;
     left: 156px;
-    text-align: left;
 }
 
 /* PORTOFOLIO */
