@@ -110,7 +110,6 @@ body {
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
-    /* elimină sublinierea implicită a link-ului */
     background: linear-gradient(to right, #4D5AE5 0%, #4D5AE5 39%, #F4F4FD 39%, #F4F4FD 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -120,7 +119,7 @@ body {
 }
 
 body {
-    font-family: 'Roboto', sans-serif; /* C9 */
+    font-family: 'Roboto', sans-serif; 
 }
 
 h1 {
@@ -157,9 +156,9 @@ h4 {
 
 
 a {
-    color: var(--text-color); /* C13 - Culorile textului */
-    text-decoration: none; /* Elimină sublinierea implicită a link-urilor */
-    transition: color 0.3s ease; /* Efect de tranziție pentru schimbarea culorii textului */
+    color: var(--text-color); 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
 }
 
 a:hover,
@@ -197,7 +196,6 @@ body {
     margin: 0;
     padding: 0;
     height: 2592px;
-    /* Stabilim înălțimea totală a paginii */
     display: flex;
     flex-direction: column;
 }
@@ -575,15 +573,11 @@ button:hover {
 
 .Servicies-content ul li:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    /* Adăugare umbra */
     transition: box-shadow 0.3s;
-    /* Adăugare efect de tranziție pentru umbra */
 }
 
-/* Stilizare textului în interiorul proiectului atunci când este atins cu cursorul */
 .Servicies-content ul li:hover .project-info {
     box-shadow: none;
-    /* Anulare umbra din project-info */
 }
 
 .buttons-content ul,
