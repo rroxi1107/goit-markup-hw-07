@@ -500,25 +500,29 @@ body {
     align-items: center;
 }
 
+
 .icon-container-customers {
     display: flex;
     margin-top: 50px;
-    gap: 50px;
+    gap: 24px;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
+    background-color: white;
 }
 
 .icon-brand {
-    display: flex;
     width: 168px;
     height: 88px;
-    border: 1px solid #434455;
+    border: 1px solid #8E8F99;
     border-radius: 4px;
-    padding: 8px;
     box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.icon-container-customers .icon-brand svg {
+.icon-brand svg {
     width: 104px;
     height: 56px;
 }
