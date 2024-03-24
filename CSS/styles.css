@@ -494,33 +494,38 @@ body {
 }
 
 .Customers {
-    margin-top: 1720px;
+    margin-top: 1700px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    background-color: #FFFFFF;
 
+}
 
 .icon-container-customers {
     display: flex;
-    margin-top: 50px;
+    width: 1128px;
+    height: 88px;
     gap: 24px;
+    margin-left: 45px;
     justify-content: center;
-    align-items: center;
     background-color: white;
+    margin-top: 25px;
 }
+
 
 .icon-brand {
     width: 168px;
     height: 88px;
+    background-color: white;
     border: 1px solid #8E8F99;
     border-radius: 4px;
-    box-sizing: border-box;
-    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
+
 
 .icon-brand svg {
     width: 104px;
