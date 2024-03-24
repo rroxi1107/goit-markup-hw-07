@@ -10,6 +10,7 @@
     --h4-background-color: #ffffff;
     --h4-text-color: #2e2f42
     --footer-background-color: #2e2f42;
+    --icons-list.icon-background-color: #4D5AE5;
 }
 
 body {
@@ -280,12 +281,41 @@ body {
     color: #FFFFFF;
 }
 
-.container {
+.icon-container {
     width: 1128px;
+    height: 112px;
+    margin-top: 120px;
+    display: flex;
+    gap: 24px;
+    margin-left: 25px;
+}
+
+.icon-item {
+    width: 264px;
+    height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4F4FD;
+    border-radius: 4px;
+}
+
+.icon-strategy svg {
+    width: 64px;
+    height: 64px;
+    top: 24px;
+    left: 100px;
+    padding: 0px 2.14px;
+    gap: 0px;
+}
+
+.container {
     height: 104px;
+    width: 1128px;
     position: absolute;
-    top: 730px;
-    left: 156px;
+    top: 812px;
+    margin-left: 25px;
+    justify-content: center;
 }
 
 .customlist {
@@ -319,7 +349,8 @@ body {
 }
 
 .images-content h3 {
-    margin-bottom: 72px;
+    margin-bottom: 80px;
+    margin-top: 120px;
     text-align: center;
 }
 
@@ -365,10 +396,12 @@ body {
 .team-content {
     background-color: #F4F4FD;
     height: 723px;
+    margin-top: 120px;
 }
 
 .team-content h3 {
-    margin-bottom: 72px;
+    margin-top: 120px;
+    margin-bottom: 45px;
     background-color: #F4F4FD;
     text-align: center;
 }
@@ -439,8 +472,56 @@ body {
 }
 
 /* icons team */
+.icon-list {
+    display: flex;
+    gap: 24px;
+    margin-top: 2px;
+}
 
+.icon-list .icon {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: #4D5AE5;
+}
 
+.icon-list .icon svg {
+    width: 16px;
+    height: 16px;
+}
+
+.Customers {
+    margin-top: 1720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container-customers {
+    display: flex;
+    margin-top: 50px;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;  
+}
+
+.icon-brand {
+    display: flex;
+    width: 168px;
+    height: 88px;
+    border: 1px solid #434455;
+    border-radius: 4px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.icon-container-customers .icon-brand svg {
+    width: 104px;
+    height: 56px;
+}
 
 footer {
     position: absolute;
@@ -458,6 +539,43 @@ footer {
     position: absolute;
     bottom: 150px;
     left: 156px;
+}
+
+.social-media {
+    display: flex;
+    gap: 0px;
+    position: absolute;
+    left: 540px;
+    top: 84px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;   
+}
+
+.icon-list-footer {
+    display: flex;
+    gap: 24px;
+    position: absolute;
+    bottom: 132px;
+    left: 540px;
+}
+
+.icon-list-footer .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4D5AE5;
+}
+
+.icon-list-footer .icon svg {
+    width: 16px;
+    height: 16px;
 }
 
 /* PORTOFOLIO */
