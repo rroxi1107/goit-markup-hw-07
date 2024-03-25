@@ -18,11 +18,11 @@
             <!-- Antet -->
             <header>
                 <div class="header-content">
-                    <h1><a href="#" class="logoheader">WEBSTUDIO </a></h1>
+                    <h1><a href="#" class="logoheader">WEBSTUDIO</a></h1>
                     <nav>
                         <ul class="main-options">
-                            <li><a href="./index.html">Studio</a></li>
-                            <li><a href="./portofolio.html">Portofolio</a></li>
+                            <li><a href="./index.html" class="border-index">Studio</a></li>
+                            <li><a href="./portofolio.html" class="border-portofolio">Portofolio</a></li>
                             <li><a href="#contacts">Contacts</a></li>
                         </ul>
                     </nav>
@@ -42,9 +42,16 @@
                     <div class="hero-content">
                         <h2>Effective Solutions</h2>
                         <h2>for Your Business</h2>
-                        <button type="button" class="order-service">Order Service</button>
+                        <button type="button" class="order-service" data-modal-open>Order Service</button>
                     </div>
                 </section>
+
+                <div class="modal is-hidden" data-modal>
+                    <div class="modal-content">
+                        <button class="close-btn" data-modal-close>&times;</button>
+                        Continut modal
+                    </div>
+                </div>
 
                 <!-- Lista cu obiective -->
                 <section>
@@ -341,6 +348,12 @@
             </footer>
 
     </div>
+
+    <script>
+        feather.replace();
+    </script>
+    <script src="./js/modal.js"></script>
+
 </body>
 
 </html>
