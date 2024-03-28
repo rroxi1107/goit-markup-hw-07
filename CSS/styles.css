@@ -874,7 +874,7 @@ footer {
     font-size: 16px;
 }
 
-/* Stilizează textul din buton conform cerințelor specificate */
+
 .form-footer button.subscribe span {
     width: 77px;
     height: 24px;
@@ -888,21 +888,17 @@ footer {
     color: #FFFFFF;
 }
 
-/* Stilizează iconița de trimis */
+
 .form-footer .form-send {
     display: inline-block;
     margin-left: 5px;
-    /* Distanța între text și iconiță */
 }
 
-/* Stilizează SVG-ul */
+
 .form-footer svg {
     width: 20px;
-    /* Lățimea SVG-ului */
     height: 20px;
-    /* Înălțimea SVG-ului */
     fill: #fff;
-    /* Culoarea de umplere a SVG-ului */
 }
 
 .form-footer {
@@ -954,7 +950,6 @@ footer {
     background-color: #4D5AE5;
 }
 
-/* Stilizează textul din buton conform cerințelor specificate */
 .form-footer button.subscribe span {
     width: 77px;
     height: 24px;
