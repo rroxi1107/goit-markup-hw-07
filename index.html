@@ -49,34 +49,54 @@
                 <div class="modal is-hidden" data-modal>
                     <div class="modal-content">
                         <button class="close-btn" data-modal-close>&times;</button>
-                        <div class="Leave your contacts">
+                        <div class="Leave-your-contacts">
                             <p>Leave your contacts and we will call you back</p>
                         </div>
                         <form class="form">
                             <label>
-                                <span>Nume</span>
-                                <input type="text" name="firstName" required autofocus placeholder="EX: Frincu Roxana-Iuliana"/>
+                                <span>Name 
+                                    <div class="form-person">
+                                        <svg width="32" height="32" viewBox="0 0 32 32">
+                                            <use href="./icons/symbol-defs-form.svg#icon-person"></use>
+                                        </svg>
+                                    </div>
+                                </span>
+                                <input type="text" name="firstName" class="input-field" required autofocus/>
                             </label>
                             <label>
-                                <span>Numar</span>
-                                <input type="tel" name="phone_number" required/>
+                                <span>Phone
+                                    <div class="form-phone">
+                                        <svg width="32" height="32" viewBox="0 0 32 32">
+                                            <use href="./icons/symbol-defs-form.svg#icon-phone"></use>
+                                        </svg>
+                                    </div>
+                                </span>
+                                <input type="tel" name="phone_number" required class="input-field"/>
                             </label>
                             <label>
-                                <span>Email</span>
-                                <input type="email" name="email" required />
+                                <span>Email
+                                    <div class="form-email">
+                                        <svg width="32" height="32" viewBox="0 0 32 32">
+                                            <use href="./icons/symbol-defs-form.svg#icon-email"></use>
+                                        </svg>
+                                    </div>
+                                </span>
+                                <input type="email" name="email" required class="input-field"/>
                             </label>
                             <label>
                                 <span>Comment</span>
-                                <textarea name="feedback" rows="5" placeholder="Enter your comment here..."></textarea>
+                                <textarea name="feedback" class="input-field feedback-textarea" placeholder="Text input"></textarea>
                             </label>
                             <div class="agreement-privacy">
                                 <label>
-                                    <input type="checkbox" name="agreement" value="yes" checked required />
+                                    <input class="agree" type="checkbox" name="agreement" value="yes" required />
                                 </label>
-                                <span>I accept the terms and conditions of the Privacy Policy</span>
+                                <svg class="check" width="32" height="32" viewBox="0 0 32 32">
+                                    <use href="./icons/symbol-defs-form.svg#icon-checked"></use>
+                                </svg>
+                                <span>I accept the terms and conditions of the <a href="#" class="privacy-policy-link">Privacy Policy</a></span>
                             </div>
-                            
-                            <button type="submit">Send</button>
+                            <button class="send-button" type="submit">Send</button>
                         </form>
                     </div>
                 </div>
@@ -373,6 +393,20 @@
                         </svg>
                     </a>
                 </div>
+                <form class="form-footer">
+                    <label class="label-footer">
+                        <span class="span-footer">Subscribe</span>
+                        <input type="email" name="email" placeholder="E-mail" required/>
+                        <button class="subscribe" type="submit">
+                            <span>Subscribe</span>
+                            <div class="form-send">
+                                <svg width="24" height="20" viewBox="0 0 24 20">
+                                    <use href="./icons/symbol-defs-form.svg#icon-send"></use>
+                                </svg>
+                            </div>
+                        </button>
+                    </label>
+                </form>
             </footer>
 
     </div>

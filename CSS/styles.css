@@ -288,7 +288,7 @@ body {
 
 .modal {
     position: fixed;
-    top: 0;
+    top: 8px;
     left: 0;
     width: 100vw;
     height: 100vh;
@@ -297,18 +297,201 @@ body {
     align-items: center;
     background-color: #2E2F4266;
     z-index: 5;
+    overflow: auto;
 }
 
 .modal-content {
     margin: 0 auto;
-    margin-top: 80px;
+    margin-top: 100px;
     margin-bottom: 8px;
-    padding: 16px;
+    padding: 24px;
     background-color: #fff;
     width: 408px;
     height: 584px;
     position: relative;
     border-radius: 4px;
+}
+
+.modal-content .Leave-your-contacts p {
+    width: 360px;
+    height: 24px;
+    top: 152px;
+    left: 540px;
+    gap: 0px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2E2F42;
+}
+
+.form input[type="text"],
+.form input[type="tel"],
+.form input[type="email"] {
+    width: 360px;
+    height: 40px;
+    justify-content: center;
+    padding: 12px;
+    padding-left: 30px;
+    margin-right: 20px;
+    margin-bottom: 8px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #2E2F4266;
+    border: 1px solid #2E2F4266;
+    border-radius: 4px 4px 4px 4px;
+}
+
+.feedback-textarea {
+    width: 360px;
+    height: 120px;
+    justify-content: center;
+    padding: 12px;
+    margin-bottom: 8px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #2E2F4266;
+    resize: none;
+    border-radius: 4px 4px 4px 4px;
+}
+
+
+.form input[type="text"]:focus,
+.form input[type="tel"]:focus,
+.form input[type="email"]:focus {
+    color: #4D5AE5;
+    border-color: #4D5AE5;
+}
+
+
+.feedback-textarea:focus {
+    border-color: #4D5AE5;
+    color: #4D5AE5;
+}
+
+
+.form {
+    width: 360px;
+    height: 336px;
+    top: 192px;
+    left: 540px;
+    gap: 8px;
+    border-radius: 4px 4px 4px 4px;
+    opacity: 1;
+    justify-content: center;
+}
+
+.form-person svg { 
+    position: relative;
+    top: 15px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    color:#2E2F42;
+}
+
+
+.form-phone svg {
+    position: relative;
+    top: 15px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    color: #2E2F42;
+}
+
+.form-email svg {
+    position: relative;
+    top: 15px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    color: #2E2F42;
+}
+
+.agree {
+    appearance: none;
+}
+
+.check {
+    display: flex;
+    position: relative;
+    left: -5px;
+    top: -2px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #333333;
+    border-radius: 4px;
+}
+
+.check svg {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #333333;
+    display: none;
+}
+
+.check:active,
+.check:focus {
+    background-color: #4D5AE5;
+    display: flex;
+}
+
+
+
+.agreement-privacy {
+    width: 360px;
+    height: 16px;
+    top: 544px;
+    left: 540px;
+    gap: 8px;
+    border-radius: 4px 0px 0px 0px;
+    opacity: 0px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #8E8F99;
+}
+
+
+
+
+.privacy-policy-link {
+    text-decoration: underline;
+    color: #4D5AE5;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    text-align: left;
+}
+ 
+.modal-content .send-button {
+    width: 169px;
+    height: 56px;
+    padding: 16px 32px;
+    margin-top: 30px;
+    margin-left: 102px;
+    border-radius: 4px;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    background-color: #4D5AE5;
+    color: #FFFFFF;
 }
 
 .close-btn {
@@ -318,8 +501,8 @@ body {
     color: #2E2F42;
     outline: none;
     position: absolute;
-    top: 24px;
-    right: 0px;
+    top: 10px;
+    right: -10px;
     border-color: #0000001A;
     border-radius: 50%;
     display: flex;
@@ -329,21 +512,29 @@ body {
 
 label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 label span {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
+    width: 34px;
+    height: 14px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #8E8F99;
 }
 
 .agreement-privacy {
-    display: flex;
-    
+    display: flex;  
 }
-
-
 
 .icon-container {
     width: 1128px;
@@ -648,6 +839,145 @@ footer {
     width: 16px;
     height: 16px;
 }
+
+.form-footer {
+    display: flex;
+    margin-left: 870px;
+    margin-top: 110px;
+}
+
+
+.form-footer input[type="email"] {
+    width: 264px;
+    height: 40px;
+    position: absolute;
+    top: 140px;
+    left: 828px;
+    gap: 0px;
+    padding-left: 20px;
+    border-radius: 4px 4px 4px 4px;
+    border: 1px solid #FFFFFF;
+    background: none;
+}
+
+.form-footer button.subscribe {
+    width: 165px;
+    height: 40px;
+    position: absolute;
+    top: 140px;
+    left: 1116px;
+    padding: 8px 24px;
+    gap: 16px;
+    border-radius: 4px 4px 4px 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Stilizează textul din buton conform cerințelor specificate */
+.form-footer button.subscribe span {
+    width: 77px;
+    height: 24px;
+    gap: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* Stilizează iconița de trimis */
+.form-footer .form-send {
+    display: inline-block;
+    margin-left: 5px;
+    /* Distanța între text și iconiță */
+}
+
+/* Stilizează SVG-ul */
+.form-footer svg {
+    width: 20px;
+    /* Lățimea SVG-ului */
+    height: 20px;
+    /* Înălțimea SVG-ului */
+    fill: #fff;
+    /* Culoarea de umplere a SVG-ului */
+}
+
+.form-footer {
+    display: flex;
+    margin-left: 870px;
+    margin-top: 110px;
+}
+
+.span-footer {
+    width: 75px;
+    height: 24px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #FFFFFF;
+    position: relative;
+    left: -40px;
+    top: -10px
+}
+
+.form-footer input[type="email"] {
+    width: 264px;
+    height: 40px;
+    position: absolute;
+    top: 140px;
+    left: 828px;
+    gap: 0px;
+    padding-left: 20px;
+    border-radius: 4px 4px 4px 4px;
+    border: 1px solid #FFFFFF;
+    background: none;
+}
+
+.form-footer button.subscribe {
+    width: 165px;
+    height: 40px;
+    position: absolute;
+    top: 140px;
+    left: 1116px;
+    padding: 8px 24px;
+    gap: 16px;
+    border-radius: 4px 4px 4px 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #4D5AE5;
+}
+
+/* Stilizează textul din buton conform cerințelor specificate */
+.form-footer button.subscribe span {
+    width: 77px;
+    height: 24px;
+    gap: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+.form-footer svg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -25px;
+    left: 45px;
+}
+
+
 
 /* PORTOFOLIO */
 
