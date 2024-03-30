@@ -344,7 +344,7 @@ body {
     letter-spacing: 0.04em;
     text-align: left;
     color: #2E2F4266;
-    border: 1px solid #2E2F4266;
+    border: 2px solid #2E2F4266;
     border-radius: 4px 4px 4px 4px;
 }
 
@@ -423,30 +423,25 @@ body {
     appearance: none;
 }
 
+
+.svg-check {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    border: 1px solid gray;
+    border-radius: 3px 3px 3px 3px;
+}
+
 .check {
-    display: flex;
     position: relative;
-    left: -5px;
-    top: -2px;
-    width: 20px;
-    height: 20px;
-    border: 1px solid #333333;
-    border-radius: 4px;
-}
-
-.check svg {
-    width: 20px;
-    height: 20px;
-    border: 1px solid #333333;
+    top: -7px;
     display: none;
+    fill: #4D5AE5;
 }
 
-.check:active,
-.check:focus {
-    background-color: #4D5AE5;
+.svg-check:active .check {
     display: flex;
 }
-
 
 
 .agreement-privacy {
@@ -465,7 +460,6 @@ body {
     text-align: left;
     color: #8E8F99;
 }
-
 
 
 
@@ -515,6 +509,8 @@ label {
     margin-bottom: 0px;
 }
 
+
+
 label span {
     display: block;
     font-weight: bold;
@@ -530,6 +526,16 @@ label span {
     letter-spacing: 0.04em;
     text-align: left;
     color: #8E8F99;
+}
+
+label:focus-within svg {
+    fill: #4D5AE5;
+}
+
+.input-field:focus {
+    border: 2px solid #4D5AE5;
+    outline: none;
+
 }
 
 .agreement-privacy {
