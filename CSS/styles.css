@@ -17,8 +17,6 @@ body {
     font-family: "Roboto", sans-serif; 
     color: var(--text-color); 
     background-color: var(--background-color); 
-    margin: 0; 
-    padding: 0; 
 }
 
 /* Stilurile pentru fonturile Roboto */
@@ -195,8 +193,6 @@ button {
 /* Custom Index and Portofolio Header */
 
 body {
-    margin: 0;
-    padding: 0;
     height: 2592px;
     display: flex;
     flex-direction: column;
@@ -246,9 +242,12 @@ body {
 
 .hero {
     height: 600px;
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/peopleoffice.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
 }   
 
 .hero-content {
@@ -542,13 +541,21 @@ label:focus-within svg {
     display: flex;  
 }
 
+.icon-and-strategy {
+    display: flex;
+    justify-content: center;
+}
+
 .icon-container {
     width: 1128px;
     height: 112px;
-    margin-top: 120px;
+    margin-top: 40px;
+    position: absolute;
+    top: 750px;
     display: flex;
     gap: 24px;
-    margin-left: 25px;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon-item {
@@ -564,26 +571,22 @@ label:focus-within svg {
 .icon-strategy svg {
     width: 64px;
     height: 64px;
-    top: 24px;
-    left: 100px;
-    padding: 0px 2.14px;
-    gap: 0px;
 }
 
 .container {
-    height: 104px;
+    height: 100%;
     width: 1128px;
     position: absolute;
-    top: 812px;
-    margin-left: 25px;
+    gap: 24px;
+    top: 825px;
     justify-content: center;
+    align-items: center;
 }
 
 .customlist {
     display: flex;
-    justify-content: space-between;
-    padding: 0;
-    margin: 0;
+    justify-content: center;
+    gap: 24px;
 }
 
 .customitem {
@@ -755,20 +758,19 @@ label:focus-within svg {
 }
 
 .Customers {
-    margin-top: 1700px;
+    margin-top: 1850px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 
 .icon-container-customers {
     display: flex;
-    width: 1128px;
+    width: 100%;
     height: 88px;
     gap: 24px;
-    margin-left: 45px;
     justify-content: center;
     margin-top: 25px;
 }
@@ -793,12 +795,13 @@ label:focus-within svg {
 
 footer {
     position: absolute;
-    width: 1440px;
+    width: 100%;
     height: 312px;
     top: 3000px;
     background-color: #2E2F42;
     color: #FFFFFF;
     text-align: left;
+    justify-content: center;
 }
 
 .footer-container {
@@ -914,7 +917,7 @@ footer {
 }
 
 .span-footer {
-    width: 75px;
+    width: 100%;
     height: 24px;
     font-family: Roboto;
     font-size: 16px;
@@ -923,9 +926,9 @@ footer {
     letter-spacing: 0.02em;
     text-align: left;
     color: #FFFFFF;
-    position: relative;
-    left: -40px;
-    top: -10px
+    position: absolute;
+    top: 100px;
+    left: 828px;
 }
 
 .form-footer input[type="email"] {
@@ -1179,3 +1182,392 @@ nav ul li a.current::after {
     position: relative;
     top: 22px;
 }
+
+
+/* Custom mobile navigation*/
+
+
+
+/* Stilizare tableta si device-uri peste 768px */
+
+
+.js-menu-container {
+    width: 428px;
+    height: 796px;
+}
+.js-menu-container {
+    display: none;
+    background-color: white;
+}
+
+.js-menu-container.is-open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 5;
+    width: 428px;
+    height: 7px;
+}
+
+
+.js-close-menu {
+   
+    border: 1px solid #E7E9FC;
+    border-radius: 50%;
+    color: #2E2F42;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.js-close-menu:hover,
+.js-close-menu:active {
+    background-color: initial;
+    color: initial;
+}
+
+.js-close-menu svg {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.mobile-menu-navigation {
+    list-style: none;
+    height: 200px;
+    position: relative;
+    top: 120px;
+    left: 40px;
+    gap: 40px;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    background-color: white;
+}
+
+.main-options-mobile {
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    outline: none;
+}
+
+.contact-list-mobile {
+    position: relative;
+    top: 200px;
+}
+
+.main-options-mobile {
+    width: 100%;
+    height: 200px;
+    top: 80px;
+    left: 40px;
+}
+
+.contact-list-mobile .tel-mobile {
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.contact-list-mobile .mail-mobile {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.mobile-menu-icons {
+    display: flex;
+    gap: 24px;
+    margin-top: 450px;
+    justify-content: center;
+}
+
+.mobile-menu-icons .icon-mobile {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: #4D5AE5;
+}
+
+.mobile-menu-icons .icon-mobile svg {
+    width: 16px;
+    height: 16px;
+}
+
+
+.mobile-menu-navigation .main-options-mobile,
+.mobile-menu-navigation .contact-list-mobile {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.logoheader-mobile {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    background: linear-gradient(to right, #4D5AE5 0%, #4D5AE5 39%, #2E2F42 39%, #2E2F42 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+}
+
+.header-container-mobile {
+    display: none;
+    justify-content: space-evenly;
+}
+
+
+.js-open-menu:hover,
+.js-open-menu:active {
+    background-color: initial;
+    color: initial;
+    box-shadow: none;
+}
+
+/* Media query pentru dispozitivele mobile */
+@media screen and (max-width: 767px) {
+
+    /* Afișează header-ul mobil când este pe un dispozitiv cu lățimea mai mică sau egală cu 767px */
+    
+    body {
+        width: 428px;
+        height: 4926px;
+        /* Alte stiluri pentru body aici */
+    }
+
+    .icon-and-strategy .icon-item {
+        /* Ascundeți iconurile */
+        display: none;
+    }
+    
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    .container {
+        position: relative;
+        top: 0px;
+    }
+    .customlist {
+        display: flex;
+        flex-direction: column;
+        /* Afișează elementele pe o singură coloană */
+        gap: 10px;
+        /* Spațiere între elemente */
+    }
+    
+    .customitem p{
+        width: 396px;
+        /* Lățimea maximă a elementelor */
+        /* Margini pentru a le centra */
+        /* Aliniere centrată a textului */
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+    }
+
+    .customitem h4 {
+        width: 396px;
+        font-family: Roboto;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        
+    }
+    
+    .images-content {
+        display: none;
+    }
+
+    .team-content {
+        display: flex;
+        flex-direction: column;
+        width: 428px;
+        justify-content: center;
+        position: absolute;
+        background-color: #F4F4FD;
+        height: 2232px;
+        margin-top: -100px;
+    }
+
+    
+    .our-team li {
+        background-color: #F4F4FD;
+        margin-bottom: 120px;
+        justify-content: center;
+        display: flex;
+    }
+
+
+    .icon-container-customers {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        margin-top: -750px;
+        gap: 10px;
+        width: 390px;
+        height: 396px;
+    
+    }
+
+
+    .icon-brand {
+        width: 190px;
+        height: 88px;
+        border: 1px solid #8E8F99;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .Customers {
+        margin-top: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* Stiluri pentru footer */
+    footer {
+        margin-top: 1650px;
+        display: flex;
+        flex-direction: column;
+        width: 428px;
+        align-items: center;
+        height: 664px;
+    }
+
+    .footer-container{
+        position: relative;
+        margin-top: 0px;
+        width: 268px;
+        left: 0px;
+    }
+
+    .footer-container .logofooter{
+        text-align: center;
+        position: relative;
+        left: 40px;
+    }
+
+    .footer-container p{
+        text-align: justify;
+    }
+    
+    .social-media {
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+
+    .icon-list-footer {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        width: 428px;
+        justify-content: center;
+    }
+
+    .label-footer {
+        display: flex;
+        flex-direction: column;
+        /* Așezare pe coloană pentru elementele din formular */
+        align-items: center;
+        /* Aliniere la centru pe axa orizontală */
+        width: 428px;
+        margin-bottom: 20px;
+        position: relative;
+        margin-left: 0px;
+    }
+
+    .span-footer {
+        position: relative;
+        left: -260px;
+        top: -40px;
+        display: flex;    
+    }
+
+   .subscribe {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       /* Aliniază la centru pe axa orizontală */
+       margin-top: 10px;
+       /* Spațierea de la marginea de sus */
+    }
+
+    .header-container-mobile {
+        display: flex;
+    }
+    .hero {
+       
+        background-image: url('../images/peopleoffice.jpg')
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;  
+        width: 428px;
+        height: 432px;
+    }
+
+    .hero-content {
+        display: flex;
+    }
+ 
+    
+
+    .js-open-menu {
+        display: flex;
+        position: relative;
+        top:20px;
+        right: -40px;
+    }
+   
+    /* Ascunde header-ul desktop când este pe un dispozitiv cu lățimea mai mică sau egală cu 767px */
+    .header-content {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+

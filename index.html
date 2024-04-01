@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css" />
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEBSTUDIO</title>
     <!-- Conecteaza fonturile de pe styles.css -->
@@ -14,26 +15,79 @@
 </head>
 
 <body> 
-    <div class="layout">
-            <!-- Antet -->
-            <header>
-                <div class="header-content">
-                    <h1><a href="#" class="logoheader">WEBSTUDIO</a></h1>
-                    <nav>
-                        <ul class="main-options">
-                            <li><a href="./index.html" class="current">Studio</a></li>
-                            <li><a href="./portofolio.html">Portofolio</a></li>
-                            <li><a href="#contacts">Contacts</a></li>
-                        </ul>
-                    </nav>
-            
-                    <!-- Informații de contact -->
+    
+    <div class="js-menu-container">
+        <button class="menu-toggle js-close-menu">
+            <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                <path fill-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </button>
+        <nav class="mobile-menu-navigation">
+            <ul class="main-options-mobile">
+                <li><a href="./index.html" class="current">Studio</a></li>
+                <li><a href="./portofolio.html">Portofolio</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+            <ul class="contact-list-mobile">
+                <li class="tel-mobile"><a href="tel:+1100011111111">+11 (000) 111-11-11</a></li>
+                <li class="mail-mobile"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                
+            </ul>
+        </nav>
+        <div class="mobile-menu-icons">
+            <a href="https://www.instagram.com/" target="_blank" class="icon-mobile">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use href="./icons/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+            </a>
+            <a href="https://twitter.com/" target="_blank" class="icon-mobile">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use href="./icons/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" class="icon-mobile">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use href="./icons/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" class="icon-mobile">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                    <use href="./icons/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+    <div class="header-container-mobile">
+        <h1><a href="#" class="logoheader-mobile">WEBSTUDIO</a></h1>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd">
+                </path>
+            </svg>
+        </button>
+    </div>
+        <header>
+            <div class="header-content">
+                <h1><a href="#" class="logoheader">WEBSTUDIO</a></h1>
+                <nav>
+                    <ul class="main-options">
+                        <li><a href="./index.html" class="current">Studio</a></li>
+                        <li><a href="./portofolio.html">Portofolio</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                    </ul>
+                </nav>
+                <div>
                     <ul class="contact-list">
                         <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                         <li><a href="tel:+1100011111111">+11 (000) 111-11-11</a></li>
                     </ul>
                 </div>
-            </header>
+            </div>
+        </header>
     </div>
 
             <main>
@@ -102,7 +156,7 @@
                 </div>
 
                 <!-- Lista cu obiective -->
-                <section>
+                <section class="icon-and-strategy">
                     <div class="icon-container">
                         <div class="icon-item">
                             <div class="icon-strategy">
@@ -125,13 +179,13 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="icon-item">
+                        <dic class="icon-item">
                             <div class="icon-strategy">
                                 <svg width="32" height="32" viewBox="0 0 32 32">
                                     <use href="./icons/symbol-defs_ourstrategy.svg#icon-astronaut"></use>
                                 </svg>
                             </div>
-                        </div>
+                        </dic>
                     </div>
 
                     <div class="container">
@@ -314,7 +368,6 @@
                     <div class="icon-item-customers">
                         <div class="icon-brand">
                             <svg width="104" height="56" viewBox="0 0 104 56">
-                                <!-- Your icon SVG code here -->
                                 <use href="./icons/symbol-defs_customers.svg#icon-Logo"></use>
                             </svg>
                         </div>
@@ -322,7 +375,6 @@
                     <div class="icon-item-customer">
                         <div class="icon-brand">
                             <svg width="104" height="56" viewBox="0 0 104 56">
-                                <!-- Your icon SVG code here -->
                                 <use href="./icons/symbol-defs_customers.svg#icon-Logo-1"></use>
                             </svg>
                         </div>
@@ -330,7 +382,6 @@
                     <div class="icon-item-customer">
                         <div class="icon-brand">
                             <svg width="104" height="56" viewBox="0 0 104 56">
-                                <!-- Your icon SVG code here -->
                                 <use href="./icons/symbol-defs_customers.svg#icon-Logo-2"></use>
                             </svg>
                         </div>
@@ -338,7 +389,6 @@
                     <div class="icon-item-customer">
                         <div class="icon-brand">
                             <svg width="104" height="56" viewBox="0 0 104 56">
-                                <!-- Your icon SVG code here -->
                                 <use href="./icons/symbol-defs_customers.svg#icon-Logo-3"></use>
                             </svg>
                         </div>
@@ -346,7 +396,6 @@
                     <div class="icon-item-customer">
                         <div class="icon-brand">
                             <svg width="104" height="56" viewBox="0 0 104 56">
-                                <!-- Your icon SVG code here -->
                                 <use href="./icons/symbol-defs_customers.svg#icon-Logo-4"></use>
                             </svg>
                         </div>
@@ -354,7 +403,6 @@
                     <div class="icon-item-cutomer">
                         <div class="icon-brand">
                             <svg width="104" height="56" viewBox="0 0 104 56">
-                                <!-- Your icon SVG code here -->
                                 <use href="./icons/symbol-defs_customers.svg#icon-Logo-5"></use>
                             </svg>
                         </div>
@@ -415,6 +463,11 @@
         feather.replace();
     </script>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous">
+    </script>
 
 </body>
 
