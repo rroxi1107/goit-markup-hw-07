@@ -872,7 +872,7 @@ footer {
 .form-footer button.subscribe {
     width: 165px;
     height: 40px;
-    position: absolute;
+    position: relative;
     top: 140px;
     left: 1116px;
     padding: 8px 24px;
@@ -1188,8 +1188,6 @@ nav ul li a.current::after {
 
 
 
-/* Stilizare tableta si device-uri peste 768px */
-
 
 .js-menu-container {
     width: 428px;
@@ -1204,17 +1202,18 @@ nav ul li a.current::after {
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 0;
-    left: 0;
-    background-color: white;
+    top: 0px;
+    left: 0px;
     z-index: 5;
     width: 428px;
-    height: 7px;
+    height: 100vh;
+    background-color: white;
 }
 
 
+
 .js-close-menu {
-   
+    
     border: 1px solid #E7E9FC;
     border-radius: 50%;
     color: #2E2F42;
@@ -1255,7 +1254,6 @@ nav ul li a.current::after {
     line-height: 40px;
     letter-spacing: 0.02em;
     text-align: left;
-    background-color: white;
 }
 
 .main-options-mobile {
@@ -1263,6 +1261,10 @@ nav ul li a.current::after {
     display: flex;
     flex-direction: column;
     outline: none;
+    width: 100%;
+    height: 200px;
+    top: 80px;
+    left: 40px;
 }
 
 .contact-list-mobile {
@@ -1270,12 +1272,6 @@ nav ul li a.current::after {
     top: 200px;
 }
 
-.main-options-mobile {
-    width: 100%;
-    height: 200px;
-    top: 80px;
-    left: 40px;
-}
 
 .contact-list-mobile .tel-mobile {
     font-family: Roboto;
@@ -1350,19 +1346,16 @@ nav ul li a.current::after {
     box-shadow: none;
 }
 
-/* Media query pentru dispozitivele mobile */
-@media screen and (max-width: 767px) {
 
-    /* Afișează header-ul mobil când este pe un dispozitiv cu lățimea mai mică sau egală cu 767px */
+@media screen and (max-width: 428px) {
+
     
     body {
         width: 428px;
         height: 4926px;
-        /* Alte stiluri pentru body aici */
     }
 
     .icon-and-strategy .icon-item {
-        /* Ascundeți iconurile */
         display: none;
     }
     
@@ -1375,21 +1368,16 @@ nav ul li a.current::after {
     
     .container {
         position: relative;
-        top: 0px;
+        top: 100px;
     }
     .customlist {
         display: flex;
         flex-direction: column;
-        /* Afișează elementele pe o singură coloană */
         gap: 10px;
-        /* Spațiere între elemente */
     }
     
     .customitem p{
         width: 396px;
-        /* Lățimea maximă a elementelor */
-        /* Margini pentru a le centra */
-        /* Aliniere centrată a textului */
         font-family: Roboto;
         font-size: 16px;
         font-weight: 500;
@@ -1437,11 +1425,11 @@ nav ul li a.current::after {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
-        margin-top: -750px;
         gap: 10px;
         width: 390px;
         height: 396px;
-    
+        position: relative;
+        top: 700px;
     }
 
 
@@ -1457,7 +1445,8 @@ nav ul li a.current::after {
     }
 
     .Customers {
-        margin-top: 300px;
+        position: relative;
+        top: 700px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1465,7 +1454,7 @@ nav ul li a.current::after {
     
     /* Stiluri pentru footer */
     footer {
-        margin-top: 1650px;
+        margin-top: 1400px;
         display: flex;
         flex-direction: column;
         width: 428px;
@@ -1507,29 +1496,25 @@ nav ul li a.current::after {
     .label-footer {
         display: flex;
         flex-direction: column;
-        /* Așezare pe coloană pentru elementele din formular */
         align-items: center;
-        /* Aliniere la centru pe axa orizontală */
         width: 428px;
         margin-bottom: 20px;
         position: relative;
         margin-left: 0px;
     }
 
-    .span-footer {
-        position: relative;
-        left: -260px;
-        top: -40px;
-        display: flex;    
+    .form-footer input[type="email"] {
+        display: flex;
+        position: absolute;
+        width: 350px;
+        left: -400px;
+        top: -50px
     }
 
-   .subscribe {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       /* Aliniază la centru pe axa orizontală */
-       margin-top: 10px;
-       /* Spațierea de la marginea de sus */
+    .form-footer button.subscribe {
+        position: relative;
+        left: -435px;
+        top: 0px;
     }
 
     .header-container-mobile {
@@ -1547,9 +1532,32 @@ nav ul li a.current::after {
 
     .hero-content {
         display: flex;
+        flex-direction: start;
     }
  
-    
+   .modal {
+       position: fixed;
+       top: 8px;
+       width: 428px;
+       height: 796px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: #2E2F4266;
+       z-index: 5;
+    }
+
+    .modal-content {
+       margin-top: 10px;
+       padding: 10px;
+       background-color: #fff;
+       width: 392px;
+       height: 584px;
+       position: relative;
+       justify-content: center;
+       border-radius: 4px;
+
+    }
 
     .js-open-menu {
         display: flex;
@@ -1558,16 +1566,31 @@ nav ul li a.current::after {
         right: -40px;
     }
    
-    /* Ascunde header-ul desktop când este pe un dispozitiv cu lățimea mai mică sau egală cu 767px */
+
     .header-content {
         display: none;
     }
+
+
 }
 
 
+@media screen and (min-width: 1200px) {
+    .body {
+        width: 1440px;
+        height: 3199px;
+    }
+}
 
+@media screen (min-width: 429px) and (max-width: 767px) {
+    body {
+        width: 768px;
+        height: 3244px;
+    }
 
-
-
-
-
+    .js-menu-container,
+    .header-container-mobile {
+        display: none;
+    }
+    
+}
